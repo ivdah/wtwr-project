@@ -1,0 +1,41 @@
+.profile {
+  display: flex;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 24px;
+}
+
+.profile .Sidebar {
+  flex: 0 0 196px;
+}
+
+.profile .clothes-section {
+  min-width: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .profile {
+    gap: 24px;
+  }
+
+  .profile .Sidebar {
+    flex-basis: 160px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .profile {
+    width: calc(100% - 32px);
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 20px;
+  }
+
+  .profile .Sidebar,
+  .profile .clothes-section {
+    width: 100%;
+  }
+}

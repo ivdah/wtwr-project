@@ -1,0 +1,15 @@
+.page {
+  min-height: 100vh;
+  background-color: #f3f3f3;
+}
+
+.page_content {
+  width: min(calc(100% - 80px), 1360px);
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 540px) {
+  .page_content {
+    width: calc(100% - 32px);
+  }
+}
