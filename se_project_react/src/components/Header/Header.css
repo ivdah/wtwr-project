@@ -1,0 +1,142 @@
+.header {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 38px);
+  max-width: 1440px;
+  min-height: 54px;
+  margin: 0 auto;
+  padding: 10px 0;
+  gap: 20px;
+}
+
+.header__left {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__logo {
+  display: block;
+  width: 76px;
+  height: auto;
+}
+
+.header__date-and-location {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000;
+}
+
+.header__right {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.header__user-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__username {
+  margin: 0;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.header__user-avatar,
+.header__user-placeholder {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  place-items: center;
+  border: 1px solid #d0d0d0;
+  border-radius: 50%;
+}
+
+.header__user-avatar {
+  object-fit: cover;
+}
+
+.header__user-placeholder {
+  background-color: #d9d9d9;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.header__action {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.header__action:hover,
+.header__nav-link:hover {
+  opacity: 0.6;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 720px) {
+  .header {
+    width: calc(100% - 32px);
+    min-height: 64px;
+    gap: 16px;
+  }
+
+  .header__left {
+    gap: 16px;
+  }
+
+  .header__right {
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 12px 0;
+  }
+
+  .header__date-and-location {
+    display: none;
+  }
+
+  .header__logo {
+    width: 70px;
+  }
+
+  .header__action {
+    font-size: 14px;
+  }
+
+  .header__right {
+    gap: 10px;
+  }
+
+  .header__username {
+    display: none;
+  }
+}
