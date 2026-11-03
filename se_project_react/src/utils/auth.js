@@ -1,7 +1,6 @@
-const baseUrl = "http://localhost:3001";
+import handleServerResponse from "./handleServerResponse";
 
-const handleServerResponse = (res) =>
-  res.ok ? res.json() : Promise.reject(`Error: ${res.status}`);
+const baseUrl = "http://localhost:3001";
 
 export const register = ({ name, avatar, email, password }) =>
   fetch(`${baseUrl}/signup`, {
