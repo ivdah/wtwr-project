@@ -2,6 +2,10 @@
 
 WTWR is a full-stack weather-aware clothing app. The React frontend displays current weather and clothing recommendations, while the Express backend provides user accounts and a shared clothing-item API.
 
+## Backend GitHub Repository
+
+The backend source code is available in the public [WTWR backend GitHub repository](https://github.com/ivdah/se_project_express). Use this repository to review and run the Express and MongoDB API.
+
 ## Project structure
 
 - [`se_project_react/`](./se_project_react/) — React 18 and Vite frontend.

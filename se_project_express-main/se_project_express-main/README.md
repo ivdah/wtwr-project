@@ -2,6 +2,10 @@
 
 The back-end project is focused on creating a server for the WTWR application. You’ll gain a deeper understanding of how to work with databases, set up security and testing, and deploy web applications on a remote machine. The eventual goal is to create a server with an API and user authorization.
 
+## Backend GitHub Repository
+
+This backend source code is publicly available at **[https://github.com/ivdah/se_project_express](https://github.com/ivdah/se_project_express)**.
+
 ## Project Description
 
 WTWR (What to Wear?) is a backend REST API for a weather-based clothing application. The server currently provides user management functionality and stores user data in MongoDB. A frontend can use the API to retrieve all users, retrieve one user by ID, and create new users with a name and avatar URL.

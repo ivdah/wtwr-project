@@ -56,4 +56,8 @@ This project was created as a front-end web application exercise focused on stat
 
 ## Backend
 
-The backend project is available in the [WTWR backend directory](https://github.com/ivdah/wtwr-project/tree/master/se_project_express-main/se_project_express-main).
+The backend is maintained in its own public GitHub repository: **[ivdah/se_project_express](https://github.com/ivdah/se_project_express)**. Clone that repository to review and run the Express and MongoDB server:
+
+```bash
+git clone https://github.com/ivdah/se_project_express.git
+```
